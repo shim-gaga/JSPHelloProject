@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function check() {
+            alert("제출하시겠습니까?");
+            return true;
+        }
+    </script>
+</head>
+<body>
+<h2>개인 정보 입력</h2>
+<form action="form_ok.jsp" method="post" onsubmit="return check()">
+    1. 이름: <input type="text" name="username"><br/><br/>
+    2. 나이:  <input type="text" name="age"><br/><br/>
+    3. 학부:
+    <select id="majors" name="majors">
+        <option value="전산전자공학부">전산전자공학부</option>
+        <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+        <option value="생명공학부">생명공학부</option>
+    </select> <br/><br/>
+    4. RC:
+    <select id="rc" name="rc">
+        <option value="열송">열송</option>
+        <option value="토레이">토레이</option>
+        <option value="카이퍼">카이퍼</option>
+        <option value="장기려">장기려</option>
+        <option value="손양원">손양원</option>
+    </select> <br/><br/>
+    5. 생일: <input type="date" name="birth"><br/><br/>
+    6. 취미: <br>
+    <input type="checkbox" name="hobby" value="movie">영화<br>
+    <input type="checkbox" name="hobby" value="exercise">운동<br>
+    <input type="checkbox" name="hobby" value="cooking">요리<br><br>
+    7. 좋아하는 색: <br>
+    <input type="color" name="color"><br><br>
+    8. 좋아하는 음식: <br>
+    <input type="radio" name="food" value="한식">한식<br>
+    <input type="radio" name="food" value="중식">중식<br>
+    <input type="radio" name="food" value="일식">일식<br>
+    <input type="radio" name="food" value="양식">양식<br><br>
+    9. MBTI: <input type="text" name="mbti"><br/><br/>
+    10. 자신을 소개하는 글: <br>
+    <textarea name="comment" rows="10" cols="30">추가적으로 자신을 소개하고 싶은 말을 적어주세요.</textarea> <br/><br/>
+
+    <input type="checkbox" name="isCheck" value="1">
+    <label>Check me out</label><br/>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
